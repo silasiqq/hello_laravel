@@ -92,7 +92,7 @@ class UsersController extends Controller
         return back();
     }
 
-    public function sendEmailConfirmationTo($user)
+    protected function sendEmailConfirmationTo($user)
     {
         $view = 'emails.confirm';
         $data = compact('user');
