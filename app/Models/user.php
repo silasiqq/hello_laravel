@@ -50,4 +50,9 @@ class User extends Authenticatable
         $hash = md5(strtolower(trim($this->attributes['email'])));
         return "http://qu2er1hf3.hb-bkt.clouddn.com/Thunder11.ico?=$size";
     }
+
+    public function statuses()
+    {
+        return $this->hasMany(Status::class);
+    }
 }
