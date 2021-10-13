@@ -48,7 +48,7 @@ class User extends Authenticatable
     public function gravatar($size = '100')
     {
         $hash = md5(strtolower(trim($this->attributes['email'])));
-        return "http://qu2er1hf3.hb-bkt.clouddn.com/Thunder11.ico?=$size";
+        return "http://121.4.254.137/Summer.ico?=$size";
     }
 
     public function statuses()
@@ -68,7 +68,7 @@ class User extends Authenticatable
 
     public function followings()
     {
-        return $this->belongsToMany(User::class, 'followers', 'followings_id', 'user_id');
+        return $this->belongsToMany(User::class, 'followers', 'follower_id', 'user_id');
     }
 
     public function follow($user_ids)
