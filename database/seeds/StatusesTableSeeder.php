@@ -4,7 +4,7 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Status;
 
-class StatusesTableSeedeer extends Seeder
+class StatusesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
